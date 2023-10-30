@@ -1,0 +1,127 @@
+html,
+body {
+  width: 100%;
+  font-family: sans-serif;
+  padding: 20px;
+  background-image: url("coffee bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+}
+
+.header {
+  background-color: rgb(222, 184, 135);
+  font-size: 2em;
+  font-family: Impact, serif;
+  text-align: center;
+  width: 80%;
+  /*margin-left:5%;
+    margin-right:10%;*/
+  margin: auto;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+#title,
+#description {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+#survey-form {
+  background-color: burlywood;
+  width: 50%;
+  margin: auto;
+  /*margin-left:5%;
+    margin-right:10%;*/
+  padding: 20px;
+  border-radius: 50px;
+}
+.person-info {
+  display: block;
+  max-width: 90%;
+  margin: 20px;
+  font-family: Impact, serif;
+  text-align: center;
+}
+
+.box {
+  width: 100%;
+  height: 2.375rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+}
+.text {
+  text-align: left !important;
+  font-size: 1.25rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-family: Impact, serif;
+}
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+span {
+  font-size: 1rem;
+  font-family: Impact, serif;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.flex:hover {
+  background-color: #c8b289;
+  border: 2px solid black;
+  color: black;
+  border-radius: 25px;
+}
+
+#comment {
+  min-height: 120px;
+  width: 80%;
+  padding: 0.625rem;
+  resize: vertical;
+  border-radius: 25px;
+  border: 2px solid black;
+  background-color: rgb(236, 157, 54, 0.5);
+}
+#submit {
+  display: block;
+  width: 80%;
+  padding: 0.75rem;
+  background: white;
+  color: inherit;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 10%;
+  font-size: 1.125rem;
+  transform: 0.4s;
+}
+#submit:hover {
+  transform: scale(1.2);
+  background-color: #c8b289;
+  border: 2px solid black;
+  color: black;
+}

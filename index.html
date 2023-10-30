@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Survey Form Practice</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <div class="header">
+   <h1 id="title">SURVEY FORM</h1> <!--1 -->
+   <img src="coffee icon.jpg"></img>
+   <h3 id="description">Coffee Lovers</h3> <!--2 -->
+ </div>
+<form id="survey-form"> <!--3 -->
+  <!--4 NAME INPUT-->
+  <container class="person-info">
+   
+    <div class="user-name">
+        <label for="name" id="name-label" class="text" >Name</label>
+      <br>
+      <input type="text" id="name" name="name" placeholder="Ex.Juan Dela Cruz" class="box"  required>
+    </div> 
+  <br>
+  <!--5 EMAIL INPUT-->
+    <div class="user-email">
+      <label for="email" id="email-label" class="text">Email</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="Ex.JuanDelaCruz@gmail.com" class="box" required>
+    </div>
+      
+    <!-- 6.required -->
+  <br>
+  <!--7.NUMBER INPUT-->
+    <div class="user-age">
+      <label for="number" id="number-label" class="text">Age</label>
+      <br>
+      <input type="number" id="number" name="number"  min="0" max="100" placeholder="Age must be 18 to 100" class="box" required> <!-- 8 and 9-->
+     </div>
+    <br>
+  <!--SELECT OPTION-->
+   <div class="user-gender">
+      <label for="dropdown" id="dropdown-label"class="text">Gender</label>
+      <br>
+      <select id="dropdown" name="dropdown" class="box" required>
+        <option value="Select Gender" disabled selected>Select Gender</option>
+        <option value="Male">Male</option>  
+        <option value="Female">Female</option>
+        <option value="Transgender">Transgender</option>
+        <option value=" Non-binary">Non-binary</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+      </select>
+    </div>
+  <br>
+    
+  </container>
+  
+  <!--SELECT BUTTON-->
+    <div class=form-group>
+      <p>How often do you consume coffee?</p>
+      <label for="daily" class="flex"><input type="radio" name="Q1" id="daily" value="Daily" class="input-radio">Daily</input> </label>
+        <label class="flex"><input type="radio" name="Q1" value="Few times a week
+" class="input-radio"> Few times a week
+</input> </label>
+        <label class="flex"><input type="radio" name="Q1" value="Occasionally" class="input-radio" >Occasionally</input> </label>
+        <label class="flex"><input type="radio" name="Q1" value="Rarely" class="input-radio">Rarely</input> </label>
+    </div>
+  <br>
+    <div class="form-group">
+      <p>What is your preferred brewing method for coffee?</p>
+      <label class="flex"><input type="radio" name="Q2" value="Drip coffee maker" class="input-radio">Drip coffee maker</input> </label>
+        <label class="flex" ><input type="radio" name="Q2" value="French press
+" class="input-radio"> French press
+</input> </label>
+        <label class="flex"><input type="radio" name="Q2" value="Espresso machine
+"class="input-radio"> Espresso machine
+</input> </label>
+        <label class="flex"><input type="radio" name="Q2" value="Pour-over
+"class="input-radio" > Pour-over
+</input> </label>
+    <label class="flex"><input type="radio" name="Q2" value="Cold brew
+"class="input-radio">Cold brew
+</input> </label>
+    </div>
+  <br>
+  <!--SELECT CHECKBOXES-->
+   <div class="form-group">
+    <p>Which of the following coffee flavors do you enjoy? <span>(Select all that apply)</span></p>
+     <label class="flex"><input type="checkbox" name="Nutty" value="Nutty" class="input-checkbox"> Nutty</label>
+  <label class="flex"><input type="checkbox" name="Chocolatey" value="Chocolatey" class="input-checkbox"> Chocolatey</label>
+  <label class="flex"><input type="checkbox" name="Fruity" value="Fruity" class="input-checkbox"> Fruity</label>
+  <label class="flex"><input type="checkbox" name="Caramel" value="Caramel" class="input-checkbox"> Caramel</label>
+     <label class="flex"><input type="checkbox" name="Floral" value="Floral" class="input-checkbox"> Floral</label>
+     <label class="flex"><input type="checkbox" name="Spicy" value="Spicy"class="input-checkbox"> Spicy</label>
+     <label class="flex"><input type="checkbox" name="Earthy" value="Earthy"class="input-checkbox"> Earthy</label>
+   </div>
+  <br>
+   <div class="form-group">
+    <p>What type of milk do you prefer in your coffee? <span>(Select all that apply)</span></p>
+     <label class="flex"><input type="checkbox" name=" Whole-milk" value= Whole-milk class="input-checkbox">Whole milk</label>
+  <label class="flex"><input type="checkbox" name="Skim-milk" value="Skim-milk" class="input-checkbox">Skim milk</label>
+  <label class="flex"><input type="checkbox" name="Soy-milk" value="Soy-milk" class="input-checkbox"> Soy milk</label>
+  <label class="flex"><input type="checkbox" name="Almond-milk" value="Almond-milk"class="input-checkbox">Almond milk</label>
+     <label class="flex"><input type="checkbox" name=" Oat-milk" value="Oat-milk"class="input-checkbox">Oat milk</label>
+     <label class="flex"><input type="checkbox" name="Coconut-milk" value="Coconut-milk"class="input-checkbox">Coconut milk</label>
+     <label class="flex"><input type="checkbox" name="Earthy" value="Earthy"class="input-checkbox"> Earthy</label>
+ </div>
+  <!--TEXT AREA-->
+ 
+  <label for="comment"><p>What is the most important aspect(s) of your coffee?</p></label>
+  <textarea name="comment" id="comment"  rows="5" cols="50"placeholder="Type here..."></textarea>
+     
+  <br>
+  <!--SUBMIT BUTTON-->
+  <br>
+<input type="submit" value="SUBMIT" id="submit" >
+
+</form>
+
+
+
+
+
+  
+  <script src="script.js"></script>
+
+  
+</body>
+
+</html>
